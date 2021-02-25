@@ -23,13 +23,13 @@ if existence == False:
     data = file.read()      # reads file
     count1 = data.count("1994")     # finds occurrences of the year 1994
     count2 = data.count("1995")     # finds occurrences of the year 1995
-    print(f"Time accessed in 1994: {count1}")
-    print(f"Time accessed in 1995: {count2}")
+    print(f"Accessed in 1994: {count1} times")
+    print(f"Accessed in 1995: {count2} times")
     total = count1 + count2     # total number of occurrences
     print(f"Total times accessed: {total}")
 else:
     print("Hello! The file exists and can be analyzed.")
-    option = input("Would you like to analyze? Type Y/N: ")     # user input
+    option = input("Would you like to analyze the file now? Type Y/N: ")     # user input
     if option == "Y" or option == "y":
         print("One moment please...")
         file = open("https_access_log.txt")        # opens file
