@@ -7,8 +7,8 @@
 
 
 # Imports needed
-import urllib.request
-import os
+import urllib.request  # urllib is imported in order to fetch URL's
+import os              # os is imported so Pyhton provides function with interacting with operating system.
 
 # Checks for file on local disk
 file_path = './https_access_log.txt'
