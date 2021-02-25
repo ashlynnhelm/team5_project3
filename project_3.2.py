@@ -16,8 +16,8 @@ existence = os.path.exists(file_path)
 
 if existence == False:
     print("File does not exist, please wait for file to download...")
-    url = 'https://s3.amazonaws.com/tcmg476/http_access_log'    # url to log files, NOT WORKING
-    urllib.request.urlretrieve(url, './http_access_log.txt')        # retrieves the file and saves to local disL, NOT WORKING
+    url = 'https://s3.amazonaws.com/tcmg476/http_access_log'    # url to log files, WORKING
+    urllib.request.urlretrieve(url, './http_access_log.txt')        # retrieves the file and saves to local disL, WORKING
     print("File has been downloaded, please wait one more moment for analysis...")
     file = open("http_access_log.txt")      # opens file
     information = file.read()      # reads file
