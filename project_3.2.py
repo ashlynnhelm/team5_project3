@@ -20,9 +20,9 @@ if existence == False:
     urllib.request.urlretrieve(url, './http_access_log.txt')        # retrieves the file and saves to local disL, NOT WORKING
     print("File has been downloaded, please wait one more moment for analysis...")
     file = open("http_access_log.txt")      # opens file
-    data = file.read()      # reads file
-    count1 = data.count("1994")     # finds occurrences of the year 1994
-    count2 = data.count("1995")     # finds occurrences of the year 1995
+    information = file.read()      # reads file
+    count1 = information.count("1994")     # finds occurrences of the year 1994
+    count2 = information.count("1995")     # finds occurrences of the year 1995
     print(f"Accessed in 1994: {count1} times")
     print(f"Accessed in 1995: {count2} times")
     total = count1 + count2     # total number of occurrences
